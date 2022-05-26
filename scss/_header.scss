@@ -1,5 +1,6 @@
 .header {
 	padding-top: 1.6em;
+	margin-bottom: .875em;
 	// .header__container
 
 	&__container {
@@ -23,12 +24,16 @@
 .top {
 	margin-bottom: 2.6em;
 	// .top__block-logo
+//??----------------------------------------------------------//
 
 	&__block-logo {
 		display: flex;
 		gap: 1.4em;
+		@media (max-width: 767.98px) {
+			gap: 0.515em;
+		}
 	}
-
+//??----------------------------------------------------------//
 	// .top__items
 
 	&__items {
@@ -42,9 +47,12 @@
 	// .top__title
 
 	&__title {
-	justify-content: start;
-	background: url('../img/logo/group.svg') 0 100% / contain no-repeat;
-	margin-bottom: 0.4em;
+		justify-content: start;
+		background: url('../img/logo/group.svg') 0 100% / contain no-repeat;
+		margin-bottom: 0.4em;
+		//@media (max-width: 767.98px) {
+		//	margin-bottom: 0;
+		//}
 	}
 
 	// .top__text
@@ -55,18 +63,25 @@
 		font-weight: 400;
 		font-size: 0.75em;
 		line-height: 1em;
-		color: $subText;
+		//color: $subText;
+		@media (max-width: 767.98px) {
+			display: none;
+		}
 	}
 
 	// .top__block-info
 
 	&__block-info {
+		@media (max-width: 767.98px) {
+			display: none;
+		}
 	}
 
 	// .top__number
 
 	&__number {
-		font-family: 'Nunito';
+		//font-family: 'Nunito';
+		font-family: 'Arial';
 		font-weight: 600;
 		font-size: 1.13em;
 		line-height: 1.38;
@@ -83,12 +98,30 @@
 		//color: $subText;
 	}
 }
+/*-------------- icons pizza-------------------*/
+.logo-icons{
+	@media (max-width: 767.98px) {
+		display: none;
+	}
+}
+.logo-icons-mobile{
+	display: none;
+	@media (max-width: 767.98px) {
+		display: inline-block;
+	}
+}
+/*---------------------------------------------*/
+
 .bottom {
 
 	// .bottom__items
-
+	//white-space:nowrap;
+	//overflow: hidden;
 	&__items {
 		align-self: center;
+		@media (max-width: 767.98px) {
+			overflow-x: scroll;
+		}
 	}
 
 	// .bottom__menu
@@ -109,25 +142,27 @@
 		font-family: 'Nunito';
 		font-style: normal;
 		font-weight: 600;
-		font-size: 1.4em;
+		font-size: 1em;
 		line-height: 1.37;
 		text-align: center;
 		//color: $mainColorText;
 	}
 }
 .menu {
-	
+	position: sticky;
 
 	// .menu__list
-
 	&__list {
 		display: flex;
 		//flex-direction: column;
 		column-gap: 1.4em;
 		align-self: center;
+
+
 	}
 
 	&__list a{
+
 		font-family: 'Nunito';
 		font-style: normal;
 		font-weight: 400;
@@ -137,6 +172,7 @@
 		&:hover{
 			color: #F96900;
 		}
+
 		
 	}
 	

@@ -1,11 +1,16 @@
 /*---------Общие стили для кнопок ------------*/
-.btn {
+.main-button {
+	padding: 0.5em 1.2em;
+   border-radius: 1000em;
    cursor: pointer;
    font-weight: 600;
    font-size: 1em;
    line-height: 1.37em;
    //color: ;
    border-radius: 1000em;
+   @media (max-width: 767.98px) {
+		display: none;
+	}
    &:hover {
       //background-color:#
       //transition: .2s
@@ -30,9 +35,13 @@
       //height: 2.5em
    }
 }
-.main-button {
-	display: inline-block;
-	//background: $backgroundColor;
-	border-radius: 1000px;
-	//padding: rem(9) rem(19);
+
+.item-btn {
+   display: flex;
+   padding: 0.375em 0.93em;
+   background: #F3F3F7;
+   border-radius: 100em;
+   &:hover{
+      background: #FFF0E6;
+   }
 }
