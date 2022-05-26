@@ -1,0 +1,152 @@
+.header {
+	padding-top: 1.6em;
+	// .header__container
+
+	&__container {
+
+	}
+
+	// .header__top
+
+	&__top {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	// .header__bottom
+
+	&__bottom {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+.top {
+	margin-bottom: 2.6em;
+	// .top__block-logo
+
+	&__block-logo {
+		display: flex;
+		gap: 1.4em;
+	}
+
+	// .top__items
+
+	&__items {
+
+	}
+
+	&__items h1 {
+		color: transparent;
+		user-select: none;
+		//padding: rem(15);
+		//background: url('../img/logo/group.svg') 80% center / cover no-repeat;
+	}
+	// .top__title
+
+	&__title {
+	//	opacity: 0;
+	//	user-select: none;
+	//	padding: rem(10);
+	justify-content: start;
+	background: url('../img/logo/group.svg') 0 100% / contain no-repeat;
+	margin-bottom: 0.4em;
+	}
+
+	// .top__text
+
+	&__text {
+		font-family: 'Nunito';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 0.75em;
+		line-height: 1em;
+		//color: $subText;
+	}
+
+	// .top__block-info
+
+	&__block-info {
+	}
+
+	// .top__number
+
+	&__number {
+		font-family: 'Nunito';
+		font-weight: 600;
+		font-size: 1.13em;
+		line-height: 1.38;
+		//color: $mainColor;
+	}
+
+	// .top__sub-text
+
+	&__sub-text {
+		font-family: 'Nunito';
+		font-weight: 400;
+		font-size: 0.9em;
+		line-height: 1.33;
+		//color: $subText;
+	}
+}
+.bottom {
+
+	// .bottom__items
+
+	&__items {
+		align-self: center;
+	}
+
+	// .bottom__menu
+
+	&__menu {
+
+	}
+
+	// .bottom__content
+
+	&__content {
+
+	}
+
+	// .bottom__basket
+
+	&__basket {
+		font-family: 'Nunito';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 1.4em;
+		line-height: 1.37;
+		text-align: center;
+		//color: $mainColorText;
+	}
+}
+.menu {
+	
+
+	// .menu__list
+
+	&__list {
+		display: flex;
+		//flex-direction: column;
+		column-gap: 1.4em;
+		align-self: center;
+	}
+
+	&__list a{
+		font-family: 'Nunito';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 0.8em;
+		line-height: 1.35;
+		//color: $mainColor;
+		&:hover{
+			color: #F96900;
+		}
+		
+	}
+	
+	// .menu__item
+
+	&__item {
+	}
+}

@@ -1,0 +1,38 @@
+/*---------Общие стили для кнопок ------------*/
+.btn {
+   cursor: pointer;
+   font-weight: 600;
+   font-size: 1em;
+   line-height: 1.37em;
+   //color: ;
+   border-radius: 1000em;
+   &:hover {
+      //background-color:#
+      //transition: .2s
+   }
+   &:active {
+      //color: 
+   }
+   & {
+      //color: 
+      //transition: .2s
+   }
+   &:hover {
+      //background-color: #ffd2b3
+      //transition: .2s
+   }
+   &:active {
+      //color: #ffd2b3
+      //background-color: #fff0e6
+   }
+   & {
+      //width: 7.5em
+      //height: 2.5em
+   }
+}
+.main-button {
+	display: inline-block;
+	//background: $backgroundColor;
+	border-radius: 1000px;
+	//padding: rem(9) rem(19);
+}

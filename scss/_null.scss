@@ -1,0 +1,135 @@
+/*-------------Адаптивные картинки -------------*/ 
+//[class*="-ibg"] {
+//position: relative;
+//}
+
+//[class*="-ibg"] img {
+//position: absolute;
+//width: 100%;
+//height: 100%;
+//top: 0;
+//left: 0;
+//-o-object-fit: cover;
+//   object-fit: cover;
+//}
+
+//[class*="-ibg_contain"] img {
+//-o-object-fit: contain;
+//   object-fit: contain;
+//}
+
+
+/*------------------- Обнуление стилей---------------------------------*/
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+}
+html {
+	/* по умолчанию */
+	font-size: 16px;
+	scroll-behavior: smooth;
+}
+///*--------------------------*/
+//* {
+//	padding: 0px;
+//	margin: 0px;
+//	border: 0px;
+//}
+//*,
+//*:before,
+//*:after {
+//	-moz-box-sizing: border-box;
+//	-webkit-box-sizing: border-box;
+//	box-sizing: border-box;
+//}
+//:focus,
+//:active {
+//	// outline: none;
+//}
+//a:focus,
+//a:active {
+//	// outline: none;
+//}
+//html,
+//body {
+//	height: 100%;
+//	min-width: $minWidth + px;
+//}
+//body {
+//	line-height: 1;
+//	font-family: $fontFamily;
+//	font-size: $fontSize;
+//	//text-rendering: optimizeLegibility;
+//	-ms-text-size-adjust: 100%;
+//	-moz-text-size-adjust: 100%;
+//	-webkit-text-size-adjust: 100%;
+//	-webkit-font-smoothing: antialiased;
+//}
+//input,
+//button,
+//textarea {
+//	font-family: $fontFamily;
+//	font-size: inherit;
+//}
+//button {
+//	cursor: pointer;
+//	color: inherit;
+//	background-color: inherit;
+//}
+//a {
+//	color: inherit;
+//}
+//a:link,
+//a:visited {
+//	text-decoration: none;
+//}
+//a:hover {
+//	text-decoration: none;
+//}
+//ul li {
+//	list-style: none;
+//}
+//img {
+//	vertical-align: top;
+//}
+//h1,
+//h2,
+//h3,
+//h4,
+//h5,
+//h6 {
+//	font-weight: inherit;
+//	font-size: inherit;
+//}
+///*-----------------------------------------*/
