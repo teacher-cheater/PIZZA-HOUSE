@@ -38,15 +38,10 @@
 	&__items h1 {
 		color: transparent;
 		user-select: none;
-		//padding: rem(15);
-		//background: url('../img/logo/group.svg') 80% center / cover no-repeat;
 	}
 	// .top__title
 
 	&__title {
-	//	opacity: 0;
-	//	user-select: none;
-	//	padding: rem(10);
 	justify-content: start;
 	background: url('../img/logo/group.svg') 0 100% / contain no-repeat;
 	margin-bottom: 0.4em;
@@ -60,7 +55,7 @@
 		font-weight: 400;
 		font-size: 0.75em;
 		line-height: 1em;
-		//color: $subText;
+		color: $subText;
 	}
 
 	// .top__block-info
