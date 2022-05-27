@@ -37,11 +37,16 @@
 }
 
 .item-btn {
+   @media (max-width: 767.98px) {
+      background: #F3F3F7;
+      border-radius: 100em;
+      &:hover{
+         background: #FFF0E6;
+      }
+	}
    display: flex;
    padding: 0.375em 0.93em;
-   background: #F3F3F7;
-   border-radius: 100em;
    &:hover{
-      background: #FFF0E6;
+      color: #FFF0E6;
    }
 }
