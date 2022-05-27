@@ -8,6 +8,7 @@
   font-weight: 600;
   font-size: 1em;
   line-height: 1.37em;
+  background-color: #f96900;
   border-radius: 1000em;
 }
 
@@ -15,6 +16,17 @@
   .main-button {
     display: none;
   }
+}
+
+.main-button:hover {
+  background-color: #c65300;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+}
+
+.main-button:active {
+  background-color: #933e00;
 }
 
 .item-btn {
@@ -28,6 +40,107 @@
 
 .item-btn:hover {
   background: #FFF0E6;
+}
+
+.footer {
+  background-color: #464C55;
+}
+
+.footer__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 80px;
+}
+
+.footer__middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 0 40px 0;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.footer__bottom {
+  padding: 46px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.top-footer__link {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.125em;
+  line-height: 1.44;
+  color: #FFFFFF;
+  opacity: 0.7;
+}
+
+.top-footer__info a {
+  color: #FFFFFF;
+}
+
+.top-footer__text {
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+
+.middle-footer {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.28;
+  color: #FFFFFF;
+  opacity: 0.7;
+}
+
+.middle-footer__statistics h3 {
+  font-weight: 600;
+  font-size: 1.625em;
+  line-height: 1;
+}
+
+.middle-footer__statistics-1 {
+  max-width: 300px;
+  margin-right: 154px;
+}
+
+.middle-footer__statistics-2 {
+  max-width: 241px;
+}
+
+.bottom-footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 14px;
+          column-gap: 14px;
+}
+
+.bottom-footer__link {
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.38;
+  color: #FFFFFF;
+  opacity: 0.7;
+}
+
+.bottom-footer__link:hover {
+  opacity: 1;
+}
+
+.bottom-footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 6px;
+          column-gap: 6px;
 }
 
 .header {
@@ -92,6 +205,7 @@
   font-weight: 400;
   font-size: 0.75em;
   line-height: 1em;
+  color: #343434;
 }
 
 @media (max-width: 767.98px) {
@@ -106,20 +220,24 @@
   }
 }
 
-.top__number {
-  font-family: 'Arial';
-  font-weight: 600;
-  font-size: 1.13em;
-  line-height: 1.38;
-}
-
 .top__sub-text {
   font-family: 'Nunito';
   font-weight: 400;
   font-size: 0.9em;
   line-height: 1.33;
+  color: #343434;
 }
 
+/*--------------------style telephone ------------------------*/
+.telephone {
+  font-family: 'Arial';
+  font-weight: 600;
+  font-size: 1.13em;
+  line-height: 1.38;
+  color: #000;
+}
+
+/*------------------------------------------------------------*/
 /*-------------- icons pizza-------------------*/
 @media (max-width: 767.98px) {
   .logo-icons {
@@ -157,6 +275,7 @@
   font-size: 1em;
   line-height: 1.37;
   text-align: center;
+  color: #FFFFFF;
 }
 
 .menu {
@@ -180,10 +299,11 @@
   font-weight: 400;
   font-size: 0.8em;
   line-height: 1.35;
+  color: #000;
 }
 
 .menu__list a:hover {
-  color: #F96900;
+  color: #f96900;
 }
 
 /*-------------Адаптивные картинки -------------*/

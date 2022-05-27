@@ -6,17 +6,17 @@
    font-weight: 600;
    font-size: 1em;
    line-height: 1.37em;
-   //color: ;
+   background-color: $officalColor;
    border-radius: 1000em;
    @media (max-width: 767.98px) {
 		display: none;
 	}
    &:hover {
-      //background-color:#
-      //transition: .2s
+      background-color: darken($officalColor, 10);
+      transition: .2s;
    }
    &:active {
-      //color: 
+      background-color: darken($officalColor, 20);
    }
    & {
       //color: 

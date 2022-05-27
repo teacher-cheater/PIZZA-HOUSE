@@ -1,0 +1,156 @@
+//
+.footer {
+   background-color: #464C55;
+
+   // .footer__container
+
+   &__container {
+      //display: flex;
+   }
+
+   // .footer__top
+
+   &__top {
+      display: flex;
+      //row-gap: 80px;
+      margin-bottom: 80px;
+   }
+
+   // .footer__middle
+
+   &__middle {
+      display: flex;
+      padding: 0 0 40px 0;
+      border-bottom: 1px solid $mainColorText;
+      //margin-bottom: 80px;
+   }
+
+   // .footer__bottom
+
+   &__bottom {
+      padding: 46px 0;
+      display: flex;
+      justify-content: space-between;
+   }
+}
+.top-footer {
+
+   // .top-footer__list-1
+
+   &__list-1 {
+   }
+
+   // .top-footer__link
+
+   &__link {
+      font-family: 'Nunito';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.125em;
+      line-height: 1.44;
+      color: #FFFFFF;
+      opacity: 0.7;
+   }
+
+   // .top-footer__list-2
+
+   &__list-2 {
+   }
+
+   // .top-footer__list-3
+
+   &__list-3 {
+   }
+
+   // .top-footer__list-4
+
+   &__list-4 {
+   }
+
+   // .top-footer__info
+
+   &__info a{
+      color: $mainColorText;
+   }
+
+   // .top-footer__number
+
+   &__number {
+   }
+
+   // .top-footer__text
+
+   &__text {
+      color: #FFFFFF;
+      opacity: 0.5;
+   }
+
+   // .top-footer__mail
+
+   &__mail {
+   }
+}
+.telephone {
+}
+.middle-footer {
+   font-family: 'Nunito';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 1em;
+   line-height: 1.28;
+   color: $mainColorText;
+   opacity: 0.7;
+   // .middle-footer__statistics
+
+   &__statistics h3{
+      font-weight: 600;
+      font-size: 1.625em;
+      line-height: 1;
+   }
+   &__statistics-1 {
+      max-width: 300px;
+      margin-right: 154px;
+   }
+   &__statistics-2 {
+      max-width: 241px;
+   }
+}
+.bottom-footer {
+   // .bottom-footer__logo
+
+   &__logo {
+   }
+
+   // .bottom-footer__list
+
+   &__list {
+      display: flex;
+      column-gap: 14px;
+   }
+
+   // .bottom-footer__link
+
+   &__link {
+      font-weight: 400;
+      font-size: 1em;
+      line-height: 1.38;
+      color: #FFFFFF;
+      opacity: 0.7;
+      &:hover{
+         opacity: 1;
+      }
+   }
+
+   // .bottom-footer__social
+
+   &__social {
+      display: flex;
+      column-gap: 6px;
+   }
+
+   // .bottom-footer__network
+
+   &__network {
+
+   }
+}
