@@ -1,6 +1,71 @@
 @charset "UTF-8";
-/*---------Общие стили для кнопок ------------*/
 @import url("https://fonts.googleapis.com/css?family=Nunito:regular,600,700&display=swap");
+.popular {
+  margin-bottom: 40px;
+}
+
+.popular__container {
+  margin-bottom: 30px;
+}
+
+.popular__title {
+  font-family: 'Nunito';
+  font-weight: 700;
+  font-size: 1.5em;
+  line-height: 1.375;
+  color: #000;
+  margin-bottom: 1.875em;
+}
+
+.popular__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.popular__content {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 6px 25px rgba(6, 5, 50, 0.05);
+          box-shadow: 0px 6px 25px rgba(6, 5, 50, 0.05);
+  border-radius: 0.625em;
+  padding: 14px 0px 14px 18px;
+}
+
+.popular__content:not(:last-child) {
+  margin-right: 1.25em;
+}
+
+.popular__picture {
+  margin-right: 22px;
+}
+
+.popular__text {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  line-height: 1.357;
+  color: #000;
+  font-family: 'Nunito';
+}
+
+.popular__text h4 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.popular__text p {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+/*---------Общие стили для кнопок ------------*/
 .main-button {
   padding: 0.5em 1.2em;
   border-radius: 1000em;
