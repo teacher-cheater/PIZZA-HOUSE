@@ -165,12 +165,11 @@
 		//flex-direction: column;
 		column-gap: 1.4em;
 		align-self: center;
-
-
+		//flex-wrap: nowrap;
+		//??--------------------------как убрать wrap на "другие товары" ?
 	}
 
 	&__list a{
-
 		font-family: 'Nunito';
 		font-style: normal;
 		font-weight: 400;
@@ -183,7 +182,14 @@
 
 		
 	}
-	
+	&__list a{
+		//??--------------------------как убрать wrap на "другие товары" ?
+		@media (max-width: 767.98px) {
+			display: flex;
+			flex-wrap: nowrap;
+		}
+		//??--------------------------как убрать wrap на "другие товары" ?
+	}
 	// .menu__item
 
 	&__item {
