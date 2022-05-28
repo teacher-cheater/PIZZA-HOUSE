@@ -1,5 +1,6 @@
 /*---------Общие стили для кнопок ------------*/
 .main-button {
+   font-family: 'Nunito';
 	padding: 0.5em 1.2em;
    border-radius: 1000em;
    cursor: pointer;
@@ -7,16 +8,14 @@
    font-size: 1em;
    line-height: 1.37em;
    background-color: $officalColor;
+   color: $mainColorText;
    border-radius: 1000em;
-   @media (max-width: 767.98px) {
-		display: none;
-	}
    &:hover {
-      background-color: darken($officalColor, 10);
+      background: darken($officalColor, 10);
       transition: .2s;
    }
    &:active {
-      background-color: darken($officalColor, 20);
+      background: darken($officalColor, 20);
    }
    & {
       //color: 
@@ -37,6 +36,7 @@
 }
 
 .item-btn {
+   font-family: 'Nunito';
    @media (max-width: 767.98px) {
       background: #F3F3F7;
       border-radius: 100em;
@@ -48,5 +48,25 @@
    padding: 0.375em 0.93em;
    &:hover{
       color: #FFF0E6;
+   }
+}
+
+.base-button {
+   font-family: 'Nunito';
+   padding: 0.5em 1.2em;
+   border-radius: 1000em;
+   color: #D15700;
+   cursor: pointer;
+   font-weight: 600;
+   font-size: 1em;
+   line-height: 1.37em;
+   background: #FFF0E6;
+   border-radius: 1000em;
+   &:hover {
+      background: darken(#FFF0E6, 10);
+      transition: .2s;
+   }
+   &:active {
+      background: darken(#FFF0E6, 20);
    }
 }

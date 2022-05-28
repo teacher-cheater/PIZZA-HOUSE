@@ -1,0 +1,16 @@
+                  <div class="pizza__cart cart-item">
+                     <div class="cart-item__picture">
+                        <img src="img/pizza/pizza1.png" alt="pizza">
+                     </div>
+                     <div class="cart-item__title">Пицца из половинок</div>
+                     <div class="cart-item__text">Соберите свою пиццу 35 см с двумя разными вкусами</div>
+                     <div class="cart-item__content">
+                        <p>от 600 ₽</p>
+                        <a href="#" class="cart-item__button main-button">Собрать</a>
+                     </div>
+                  </div>
+
+
+                  /*------css style--------*/
+
+                  

@@ -8,15 +8,6 @@
   margin-bottom: 30px;
 }
 
-.popular__title {
-  font-family: 'Nunito';
-  font-weight: 700;
-  font-size: 1.5em;
-  line-height: 1.375;
-  color: #000;
-  margin-bottom: 1.875em;
-}
-
 .popular__items {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -67,6 +58,7 @@
 
 /*---------Общие стили для кнопок ------------*/
 .main-button {
+  font-family: 'Nunito';
   padding: 0.5em 1.2em;
   border-radius: 1000em;
   cursor: pointer;
@@ -74,27 +66,23 @@
   font-size: 1em;
   line-height: 1.37em;
   background-color: #f96900;
+  color: #FFFFFF;
   border-radius: 1000em;
 }
 
-@media (max-width: 767.98px) {
-  .main-button {
-    display: none;
-  }
-}
-
 .main-button:hover {
-  background-color: #c65300;
+  background: #c65300;
   -webkit-transition: .2s;
   -o-transition: .2s;
   transition: .2s;
 }
 
 .main-button:active {
-  background-color: #933e00;
+  background: #933e00;
 }
 
 .item-btn {
+  font-family: 'Nunito';
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -113,6 +101,30 @@
 
 .item-btn:hover {
   color: #FFF0E6;
+}
+
+.base-button {
+  font-family: 'Nunito';
+  padding: 0.5em 1.2em;
+  border-radius: 1000em;
+  color: #D15700;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1em;
+  line-height: 1.37em;
+  background: #FFF0E6;
+  border-radius: 1000em;
+}
+
+.base-button:hover {
+  background: #ffd1b3;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+}
+
+.base-button:active {
+  background: #ffb380;
 }
 
 .footer {
@@ -600,6 +612,16 @@
 }
 
 /*---------------------------------------------*/
+.bottom {
+  position: -webkit-sticky;
+  position: sticky;
+  padding: 15px 0;
+  background-color: #FFFFFF;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+
 .bottom__items {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -620,6 +642,12 @@
   line-height: 1.37;
   text-align: center;
   color: #FFFFFF;
+}
+
+@media (max-width: 767.98px) {
+  .bottom__basket {
+    display: none;
+  }
 }
 
 .menu {
@@ -658,6 +686,16 @@
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
+}
+
+/*-----------------Стили для заголовков -----------------*/
+.base-title {
+  font-family: 'Nunito';
+  font-weight: 700;
+  font-size: 1.5em;
+  line-height: 1.375;
+  color: #000;
+  margin-bottom: 1.875em;
 }
 
 /*-------------Адаптивные картинки -------------*/
@@ -801,6 +839,76 @@ body {
   max-width: 970px;
   margin: 0px auto;
   padding: 0px 15px;
+}
+
+/*------------ Основная сетка --------------*/
+.grid-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 60px 20px;
+}
+
+.pizza__cart {
+  margin: 0 -20px;
+}
+
+.cart-item {
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.cart-item__picture {
+  padding-bottom: 220px;
+}
+
+.cart-item__title {
+  font-family: 'Nunito';
+  font-weight: 600;
+  font-size: 1.25em;
+  line-height: 1.35;
+  color: #000;
+  margin-bottom: 0.625em;
+}
+
+.cart-item__text {
+  max-width: 12.13em;
+  font-family: 'Nunito';
+  font-weight: 400;
+  font-size: 0.875em;
+  line-height: 1.36;
+  color: #73798C;
+  height: 100%;
+  margin-bottom: 1.875em;
+}
+
+.cart-item__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cart-item__content p {
+  display: inline-block;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1em;
+  line-height: 1.375;
+  color: #000;
 }
 
 /*

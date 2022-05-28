@@ -1,0 +1,90 @@
+.pizza {
+
+   // .pizza__container
+
+   &__container {
+   }
+
+   // .pizza__title
+
+   &__title {
+   }
+
+   // .pizza__items
+
+   &__items {
+   }
+
+   // .pizza__cart
+
+   &__cart {
+      margin: 0 -20px;
+   }
+}
+.base-title {
+}
+.cart-item {
+   padding: 0 20px;
+   display: flex;
+   flex-direction: column;
+   // .cart-item__picture
+
+   &__picture {
+      //padding: 0 0.9375em;
+      padding-bottom: 220px;
+
+   }
+
+   &__image-pizza {
+      //padding-bottom: 220px;
+   }
+
+   // .cart-item__title
+
+   &__title {
+      font-family: 'Nunito';
+      font-weight: 600;
+      font-size: 1.25em;
+      line-height: 1.35;
+      color: $mainColor;
+      margin-bottom: 0.625em;
+   }
+
+   // .cart-item__text
+
+   &__text {
+      max-width: 12.13em;
+      font-family: 'Nunito';
+      font-weight: 400;
+      font-size: 0.875em;
+      line-height: 1.36;
+      color:$littleText;
+      //flex-grow: 1;
+      height: 100%;
+      margin-bottom: 1.875em;
+   }
+
+   // .cart-item__conten
+   &__content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+   &__content p{
+      display: inline-block;
+      font-family: 'Nunito';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1em;
+      line-height: 1.375;
+      color: $mainColor;
+   }
+
+   // .cart-item__button
+
+   &__button {
+      //display: inline-block;
+      //color: $mainColorText;
+   }
+}
+

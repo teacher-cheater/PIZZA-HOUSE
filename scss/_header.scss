@@ -121,7 +121,13 @@
 /*---------------------------------------------*/
 
 .bottom {
-
+	position: sticky;
+	//?? -------------- no working
+	padding: 15px 0;
+	background-color: $mainColorText;
+	top: 0;
+	left: 0;
+	z-index: 5;
 	// .bottom__items
 	//white-space:nowrap;
 	//overflow: hidden;
@@ -154,6 +160,9 @@
 		line-height: 1.37;
 		text-align: center;
 		color: $mainColorText;
+		@media (max-width: 767.98px) {
+			display: none;
+		}
 	}
 }
 .menu {
