@@ -613,40 +613,57 @@
 }
 
 /*---------------------------------------------*/
-.bottom {
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 970px;
+  margin: 0px auto;
+  padding: 15px;
   position: -webkit-sticky;
   position: sticky;
-  padding: 15px 0;
-  background-color: #FFFFFF;
+  background-color: #fff;
   top: 0;
   left: 0;
   z-index: 5;
 }
 
-.bottom__items {
+.navigation__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navigation__items {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
 }
 
 @media (max-width: 767.98px) {
-  .bottom__items {
+  .navigation__items {
     overflow-x: scroll;
   }
 }
 
-.bottom__basket {
+.navigation__basket {
   font-family: 'Nunito';
   font-style: normal;
   font-weight: 600;
   font-size: 1em;
   line-height: 1.37;
   text-align: center;
-  color: #FFFFFF;
+  color: #fff;
 }
 
 @media (max-width: 767.98px) {
-  .bottom__basket {
+  .navigation__basket {
     display: none;
   }
 }
@@ -672,11 +689,6 @@
   font-weight: 400;
   font-size: 0.8em;
   line-height: 1.35;
-  color: #000;
-}
-
-.menu__list a:hover {
-  color: #f96900;
 }
 
 @media (max-width: 767.98px) {

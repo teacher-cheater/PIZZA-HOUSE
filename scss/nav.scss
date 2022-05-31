@@ -1,0 +1,93 @@
+.navigation {
+   display: flex;
+   justify-content: space-between;
+   max-width: 970px;
+   margin: 0px auto;
+   padding: 15px;
+	position: sticky;
+	//?? -------------- no working
+	background-color: #fff;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	// .bottom__items
+	//white-space:nowrap;
+	//overflow: hidden;
+
+   &__container {
+      display: flex;
+      //??--------------------надо расположить блоки поодаль
+   }
+	&__items {
+		align-self: center;
+		@media (max-width: 767.98px) {
+			overflow-x: scroll;
+		}
+	}
+
+	// .bottom__menu
+
+	&__menu {
+
+	}
+
+	// .bottom__content
+
+	&__content {
+
+	}
+
+	// .bottom__basket
+
+	&__basket {
+		font-family: 'Nunito';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 1em;
+		line-height: 1.37;
+		text-align: center;
+		color: #fff;
+		@media (max-width: 767.98px) {
+			display: none;
+		}
+	}
+}
+.menu {
+	position: sticky;
+
+	// .menu__list
+	&__list {
+		display: flex;
+		//flex-direction: column;
+		column-gap: 1.4em;
+		align-self: center;
+		//flex-wrap: nowrap;
+		//??--------------------------как убрать wrap на "другие товары" ?
+	}
+
+	&__list a{
+		font-family: 'Nunito';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 0.8em;
+		line-height: 1.35;
+		//color: $mainColor;
+		//&:hover{
+		//	color: $officalColor;
+		//}
+
+		
+	}
+	&__list a{
+		//??--------------------------как убрать wrap на "другие товары" ?
+		@media (max-width: 767.98px) {
+			display: flex;
+			flex-wrap: nowrap;
+		}
+		//??--------------------------как убрать wrap на "другие товары" ?
+	}
+	// .menu__item
+
+	&__item {
+	}
+}
