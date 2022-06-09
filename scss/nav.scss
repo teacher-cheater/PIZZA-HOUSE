@@ -1,8 +1,8 @@
 .navigation {
-   display: flex;
-   justify-content: space-between;
-   max-width: 970px;
-   margin: 0px auto;
+   //display: flex;
+   //justify-content: space-between;
+   //max-width: 970px;
+   //margin: 0px auto;
    padding: 15px;
 	position: sticky;
 	//?? -------------- no working
@@ -19,6 +19,7 @@
       //??--------------------надо расположить блоки поодаль
    }
 	&__items {
+		flex: 1 1 auto;
 		align-self: center;
 		@media (max-width: 767.98px) {
 			overflow-x: scroll;
@@ -71,10 +72,10 @@
 		font-weight: 400;
 		font-size: 0.8em;
 		line-height: 1.35;
-		//color: $mainColor;
-		//&:hover{
-		//	color: $officalColor;
-		//}
+		color: $mainColor;
+		&:hover{
+			color: $officalColor;
+		}
 
 		
 	}
