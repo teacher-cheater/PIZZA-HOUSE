@@ -851,6 +851,14 @@ body {
   padding: 0px 15px;
 }
 
+.combo {
+  margin-bottom: 70px;
+}
+
+.deserts {
+  margin-bottom: 70px;
+}
+
 /*------------ Основная сетка --------------*/
 .grid-content {
   display: -ms-grid;
@@ -923,6 +931,10 @@ body {
   font-size: 1em;
   line-height: 1.375;
   color: #000;
+}
+
+.snacks {
+  margin-bottom: 70px;
 }
 
 /*
