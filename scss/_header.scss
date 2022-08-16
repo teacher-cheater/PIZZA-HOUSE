@@ -1,122 +1,99 @@
 .header {
-	padding-top: 1.6em;
-	margin-bottom: .875em;
-	// .header__container
+  padding-top: 1.6em;
+  margin-bottom: 0.875em;
+  // .header__container
 
-	&__container {
+  // .header__top
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
 
-	}
-
-	// .header__top
-
-	&__top {
-		display: flex;
-		justify-content: space-between;
-	}
-
-	// .header__bottom
-
-	&__bottom {
-		display: flex;
-		justify-content: space-between;
-	}
+  // .header__bottom
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+  }
 }
+
 .top {
-	margin-bottom: 2.6em;
-	// .top__block-logo
-//??----------------------------------------------------------//
+  margin-bottom: 2.6em;
+  // .top__block-logo
+  //??----------------------------------------------------------//
 
-	&__block-logo {
-		display: flex;
-		gap: 1.4em;
-		@media (max-width: 767.98px) {
-			gap: 0.515em;
-		}
-	}
-//??----------------------------------------------------------//
-	// .top__items
+  &__block-logo {
+    display: flex;
+    gap: 1.4em;
+    @media (max-width: 767.98px) {
+      gap: 0.515em;
+    }
+  }
+  //??----------------------------------------------------------//
+  &__items h1 {
+    color: transparent;
+    user-select: none;
+  }
+  // .top__title
 
-	&__items {
+  &__title {
+    justify-content: start;
+    background: url("../img/logo/group.svg") 0 100% / contain no-repeat;
+    margin-bottom: 0.4em;
+    //@media (max-width: 767.98px) {
+    //	margin-bottom: 0;
+    //}
+  }
 
-	}
+  // .top__text
+  &__text {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75em;
+    line-height: 1em;
+    color: $subText;
+    @media (max-width: 767.98px) {
+      display: none;
+    }
+  }
 
-	&__items h1 {
-		color: transparent;
-		user-select: none;
-	}
-	// .top__title
+  // .top__block-info
+  &__block-info {
+    @media (max-width: 767.98px) {
+      display: none;
+    }
+  }
 
-	&__title {
-		justify-content: start;
-		background: url('../img/logo/group.svg') 0 100% / contain no-repeat;
-		margin-bottom: 0.4em;
-		//@media (max-width: 767.98px) {
-		//	margin-bottom: 0;
-		//}
-	}
-
-	// .top__text
-
-	&__text {
-		font-family: 'Nunito';
-		font-style: normal;
-		font-weight: 400;
-		font-size: 0.75em;
-		line-height: 1em;
-		color: $subText;
-		@media (max-width: 767.98px) {
-			display: none;
-		}
-	}
-
-	// .top__block-info
-
-	&__block-info {
-		@media (max-width: 767.98px) {
-			display: none;
-		}
-	}
-
-	// .top__number
-
-	&__number {
-
-	}
-
-	// .top__sub-text
-
-	&__sub-text {
-		font-family: 'Nunito';
-		font-weight: 400;
-		font-size: 0.9em;
-		line-height: 1.33;
-		color: $subText;
-	}
+  // .top__sub-text
+  &__sub-text {
+    font-family: "Nunito";
+    font-weight: 400;
+    font-size: 0.9em;
+    line-height: 1.33;
+    color: $subText;
+  }
 }
-/*--------------------style telephone ------------------------*/ 
+/*--------------------style telephone ------------------------*/
 .telephone {
-	//font-family: 'Nunito';
-	font-family: 'Arial';
-	font-weight: 600;
-	font-size: 1.13em;
-	line-height: 1.38;
-	color: $mainColor;
+  //font-family: 'Nunito';
+  font-family: "Arial";
+  font-weight: 600;
+  font-size: 1.13em;
+  line-height: 1.38;
+  color: $mainColor;
 }
 /*------------------------------------------------------------*/
 
-
-
 /*-------------- icons pizza-------------------*/
-.logo-icons{
-	@media (max-width: 767.98px) {
-		display: none;
-	}
+.logo-icons {
+  @media (max-width: 767.98px) {
+    display: none;
+  }
 }
-.logo-icons-mobile{
-	display: none;
-	@media (max-width: 767.98px) {
-		display: inline-block;
-	}
+.logo-icons-mobile {
+  display: none;
+  @media (max-width: 767.98px) {
+    display: inline-block;
+  }
 }
 /*---------------------------------------------*/
-

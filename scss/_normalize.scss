@@ -1,8 +1,5 @@
 body {
 	line-height: 1;
-	//background: yellow;
-	//font-family: "Open Sans";
-
 }
 .wrapper {
 	min-height: 100%;
@@ -12,34 +9,10 @@ body {
 }
 /* ------------------------------ */
 
-
 .main {
 	flex-grow: 1;
 }
-._ibg {
-	position: relative;
-	img {
-		object-fit: cover;
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		left: 0;
-	}
-}
-// Миксин IBG
-//@mixin ibg($position: center) {
-//	position: relative;
-//	img {
-//		object-fit: cover;
-//		object-position: $position;
-//		position: absolute;
-//		width: 100%;
-//		height: 100%;
-//		top: 0;
-//		left: 0;
-//	}
-//}
+
 /* Условные ПК, ноуты и телевизоры */
 /* 1050 из макета (контейнер + отступы) */
 @media (max-width: 1050px) {
@@ -56,22 +29,3 @@ body {
 	margin: 0px auto;
 	padding: 0px 15px;
 }
-
-///* №1 */
-//@media (max-width: 1140px) {
-//	[class*="__container"] {
-//		/* max-width: 970px; */
-//	}
-//}
-///* №2 */
-//@media (max-width: 991.98px) {
-//	[class*="__container"] {
-//		/* max-width: 750px; */
-//	}
-//}
-///* №3 */
-//@media (max-width: 767.98px) {
-//	[class*="__container"] {
-//		/* max-width: none; */
-//	}
-//}

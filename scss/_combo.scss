@@ -1,61 +1,10 @@
 .combo {
-   margin-bottom: 70px;
-   // .combo__container
-
-   &__container {
-   }
-
-   // .combo__title
-
-   &__title {
-   }
-
-   // .combo__items
-
-   &__items {
-   }
-
-   // .combo__cart
-
-   &__cart {
-   }
+  margin-bottom: 70px;
 }
-.base-title {
-}
-.grid-content {
-}
+
 .cart-item {
-
-   // .cart-item__picture
-
-   &__picture {
-   }
-
-   // .cart-item__image-combo
-
-   &__image-combo {
-   }
-
-   // .cart-item__title
-
-   &__title {
-   }
-
-   // .cart-item__text
-
-   &__text {
-   }
-
-   // .cart-item__content
-
-   &__content {
-   }
-
-   // .cart-item__button
-
-   &__button {
-   }
-}
-
-.main-button {
+  // .cart-item__image-combo
+  &__image-combo {
+    padding: 0 15px;
+  }
 }

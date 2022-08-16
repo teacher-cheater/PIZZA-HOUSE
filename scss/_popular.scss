@@ -1,70 +1,51 @@
 .popular {
-   margin-bottom: 40px;
-   // .popular__container
+  margin-bottom: 40px;
+  // .popular__container
 
-   &__container {
-      //padding: ;
-      margin-bottom: 30px;
-   }
+  &__container {
+    margin-bottom: 30px;
+  }
 
-   // .popular__title
+  // .popular__items
+  &__items {
+    display: flex;
+  }
 
-   &__title {
-   }
+  // .popular__content
+  &__content {
+    flex-basis: 25%;
+    display: flex;
+    background: $mainColorText;
+    box-shadow: 0px 6px 25px rgba(6, 5, 50, 0.05);
+    border-radius: 0.625em;
+    padding: 14px 0px 14px 18px;
+    &:not(:last-child) {
+      margin-right: 1.25em;
+    }
+  }
 
-   // .popular__items
+  // .popular__picture
+  &__picture {
+    margin-right: 22px;
+  }
 
-   &__items {
-      display: flex;
-      //flex-basis: 25%;
-      //flex-wrap: wrap;
-      //margin: 0 -10px;
-   }
+  // .popular__text
+  &__text {
+    align-self: center;
+    line-height: 1.357;
+    color: $mainColor;
+    font-family: "Nunito";
+  }
 
-   // .popular__content
+  &__text h4 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+  }
 
-   &__content {
-      //flex: 1 1 22%;
-      //flex-wrap: nowrap;
-      flex-basis: 25%;
-      display: flex;
-      background: $mainColorText;
-      box-shadow: 0px 6px 25px rgba(6, 5, 50, 0.05);
-      //border: 1px solid #000;
-      border-radius: 0.625em;
-      padding: 14px 0px 14px 18px;
-      &:not(:last-child){
-         margin-right: 1.25em;
-      }
-      //gap: 20px;
-   }
-
-   // .popular__picture
-
-   &__picture {
-      //flex: 1 1 50%;
-      //column-gap: 20px;
-      margin-right: 22px;
-   }
-
-   // .popular__text
-
-   &__text {
-      //display: flex;
-      align-self: center;
-      line-height: 1.357;
-      color: $mainColor;
-      font-family: 'Nunito';
-   }
-   &__text h4{
-      //flex-wrap: nowrap;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-   }
-   &__text p{
-      font-weight: 600;
-      font-size: 16px;
-      line-height: 22px;
-   }
+  &__text p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+  }
 }
