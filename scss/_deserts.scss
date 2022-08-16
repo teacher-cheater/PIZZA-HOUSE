@@ -1,10 +1,14 @@
 .deserts {
   margin-bottom: 70px;
+  &__cart {
+    margin: 0 -20px;
+  }
 }
 
 .cart-item {
   // .cart-item__image-combo
   &__image-combo {
     padding: 0 15px;
+    max-width: 220px;
   }
 }

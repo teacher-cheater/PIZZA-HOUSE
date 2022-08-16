@@ -1,6 +1,27 @@
-/*------------ Основная сетка --------------*/ 
+/*------------ Основная сетка --------------*/
 .grid-content {
-   display: grid;
-   grid-template-columns: repeat(4, 1fr);
-   gap: 60px 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 60px 20px;
+}
+
+@media (max-width: 991.98px) {
+  .grid-content {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px 20px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .grid-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 20px;
+  }
+}
+@media (max-width: 539.98px) {
+  .grid-content {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px 20px;
+  }
 }
