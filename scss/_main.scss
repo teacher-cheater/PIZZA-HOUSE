@@ -1,13 +1,30 @@
-/*-----------------Стили для заголовков -----------------*/ 
+/*-----------------Стили для заголовков -----------------*/
 .base-title {
-   font-family: 'Nunito';
-   font-weight: 700;
-   font-size: 1.5em;
-   line-height: 1.375;
-   color: $mainColor;
-   margin-bottom: 1.875em;
+  font-family: "Nunito";
+  font-weight: 700;
+  font-size: 1.5em;
+  line-height: 1.375;
+  color: $mainColor;
+  margin-bottom: 1.875em;
 }
 
-.main{
-   padding: 0 0 134px 0;
+.main {
+  padding: 0 0 134px 0;
+}
+
+//общий блок для карточек
+
+.cart-item {
+  //  display: flex;
+  @media (max-width: 767.98px) {
+    display: flex;
+    flex-direction: row;
+  }
+  &__block {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    @media (max-width: 767.98px) {
+    }
+  }
 }

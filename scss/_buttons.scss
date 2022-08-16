@@ -1,64 +1,71 @@
 /*---------Общие стили для кнопок ------------*/
 .main-button {
-   font-family: 'Nunito';
-	padding: 0.5em 1.2em;
-   border-radius: 1000em;
-   cursor: pointer;
-   font-weight: 600;
-   font-size: 1em;
-   line-height: 1.37em;
-   background-color: $officalColor;
-   color: $mainColorText;
-   border-radius: 1000em;
-   &:hover {
-      background: darken($officalColor, 10);
-      transition: .2s;
-   }
-   &:active {
-      background: darken($officalColor, 20);
-   }
-   &:hover {
-      //background-color: #ffd2b3
-      //transition: .2s
-   }
-   &:active {
-      //color: #ffd2b3
-      //background-color: #fff0e6
-   }
+  font-family: "Nunito";
+  padding: 0.5em 1.2em;
+  border-radius: 1000em;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1em;
+  line-height: 1.37em;
+  background-color: $officalColor;
+  color: $mainColorText;
+  border-radius: 1000em;
+  &:hover {
+    background: darken($officalColor, 10);
+    transition: 0.2s;
+  }
+  &:active {
+    background: darken($officalColor, 20);
+  }
+  &:hover {
+    //background-color: #ffd2b3
+    //transition: .2s
+  }
+  &:active {
+    //color: #ffd2b3
+    //background-color: #fff0e6
+  }
+}
+
+//скрыть корзину
+.bottom__basket {
+  @media (max-width: 767.98px) {
+    display: none;
+  }
 }
 
 .item-btn {
-   font-family: 'Nunito';
-   @media (max-width: 767.98px) {
-      background: #F3F3F7;
-      border-radius: 100em;
-      &:hover{
-         background: #FFF0E6;
-      }
-	}
-   display: flex;
-   padding: 0.375em 0.93em;
-   &:hover{
-      color: #FFF0E6;
-   }
+  font-family: "Nunito";
+  @media (max-width: 767.98px) {
+    background: #f3f3f7;
+    border-radius: 100em;
+    &:hover {
+      background: #fff0e6;
+    }
+  }
+  display: flex;
+  padding: 0.375em 0.93em;
+  &:hover {
+    color: #fff0e6;
+  }
 }
 
 .base-button {
-   font-family: 'Nunito';
-   padding: 0.5em 1.2em;
-   border-radius: 1000em;
-   color: #D15700;
-   cursor: pointer;
-   font-weight: 600;
-   font-size: 1em;
-   line-height: 1.37em;
-   background: #FFF0E6;
-   border-radius: 1000em;
-   &:hover {
-      background: darken(#FFF0E6, 10);
-      transition: .2s;
-   }
-   &:active {
-      background: darken(#FFF0E6, 20);
-   }
+  font-family: "Nunito";
+  padding: 0.5em 1.2em;
+  border-radius: 1000em;
+  color: #d15700;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1em;
+  line-height: 1.37em;
+  background: #fff0e6;
+  border-radius: 1000em;
+  &:hover {
+    background: darken(#fff0e6, 10);
+    transition: 0.2s;
+  }
+  &:active {
+    background: darken(#fff0e6, 20);
+  }
 }

@@ -58,7 +58,7 @@
 
 /*---------Общие стили для кнопок ------------*/
 .main-button {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   padding: 0.5em 1.2em;
   border-radius: 1000em;
   cursor: pointer;
@@ -72,17 +72,23 @@
 
 .main-button:hover {
   background: #c65300;
-  -webkit-transition: .2s;
-  -o-transition: .2s;
-  transition: .2s;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .main-button:active {
   background: #933e00;
 }
 
+@media (max-width: 767.98px) {
+  .bottom__basket {
+    display: none;
+  }
+}
+
 .item-btn {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -91,36 +97,36 @@
 
 @media (max-width: 767.98px) {
   .item-btn {
-    background: #F3F3F7;
+    background: #f3f3f7;
     border-radius: 100em;
   }
   .item-btn:hover {
-    background: #FFF0E6;
+    background: #fff0e6;
   }
 }
 
 .item-btn:hover {
-  color: #FFF0E6;
+  color: #fff0e6;
 }
 
 .base-button {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   padding: 0.5em 1.2em;
   border-radius: 1000em;
-  color: #D15700;
+  color: #d15700;
   cursor: pointer;
   font-weight: 600;
   font-size: 1em;
   line-height: 1.37em;
-  background: #FFF0E6;
+  background: #fff0e6;
   border-radius: 1000em;
 }
 
 .base-button:hover {
   background: #ffd1b3;
-  -webkit-transition: .2s;
-  -o-transition: .2s;
-  transition: .2s;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .base-button:active {
@@ -696,7 +702,7 @@
 
 /*-----------------Стили для заголовков -----------------*/
 .base-title {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-weight: 700;
   font-size: 1.5em;
   line-height: 1.375;
@@ -706,6 +712,31 @@
 
 .main {
   padding: 0 0 134px 0;
+}
+
+@media (max-width: 767.98px) {
+  .cart-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.cart-item__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 /*-------------Адаптивные картинки -------------*/
@@ -891,14 +922,6 @@ body {
 
 @media (max-width: 767.98px) {
   .grid-content {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-    gap: 30px 20px;
-  }
-}
-
-@media (max-width: 539.98px) {
-  .grid-content {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
     gap: 30px 20px;
@@ -922,6 +945,25 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+@media (max-width: 991.98px) {
+  .cart-item {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .cart-item {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    max-width: 100%;
+  }
 }
 
 .cart-item__image-pizza {

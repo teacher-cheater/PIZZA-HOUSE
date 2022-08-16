@@ -15,13 +15,13 @@
 
 @media (max-width: 767.98px) {
   .grid-content {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px 20px;
-  }
-}
-@media (max-width: 539.98px) {
-  .grid-content {
     grid-template-columns: repeat(1, 1fr);
     gap: 30px 20px;
   }
 }
+//@media (max-width: 539.98px) {
+//  .grid-content {
+//    grid-template-columns: repeat(1, 1fr);
+//    gap: 30px 20px;
+//  }
+//}

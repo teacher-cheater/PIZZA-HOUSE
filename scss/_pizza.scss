@@ -11,6 +11,14 @@
   padding: 0 20px;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
+  @media (max-width: 991.98px) {
+    max-width: 250px;
+  }
+  @media (max-width: 767.98px) {
+    flex-direction: row;
+    max-width: 100%;
+  }
 
   &__image-pizza {
     padding: 0 15px;
