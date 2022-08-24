@@ -38,7 +38,7 @@
 }
 .menu {
   position: sticky;
-
+  white-space: nowrap;
   // .menu__list
   &__list {
     display: flex;
@@ -63,4 +63,20 @@
       flex-wrap: nowrap;
     }
   }
+}
+//--------basket
+.basket {
+  display: none;
+  @media (max-width: 767.98px) {
+    display: block;
+    position: fixed;
+    bottom: 12%;
+    right: 7%;
+  }
+}
+.basket__container {
+}
+.basket__link-mobile {
+}
+.basket__link-icons {
 }

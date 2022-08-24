@@ -39,9 +39,6 @@
     justify-content: start;
     background: url("../img/logo/pizza-house.svg") 0 100% / contain no-repeat;
     margin-bottom: 0.4em;
-    //@media (max-width: 767.98px) {
-    //	margin-bottom: 0;
-    //}
   }
 
   // .top__text
@@ -97,3 +94,8 @@
   }
 }
 /*---------------------------------------------*/
+.cart-header__link {
+  @media (max-width: 767.98px) {
+    display: none;
+  }
+}

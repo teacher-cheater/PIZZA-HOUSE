@@ -615,6 +615,12 @@
 }
 
 /*---------------------------------------------*/
+@media (max-width: 767.98px) {
+  .cart-header__link {
+    display: none;
+  }
+}
+
 .navigation {
   padding: 15px;
   position: -webkit-sticky;
@@ -671,6 +677,7 @@
 .menu {
   position: -webkit-sticky;
   position: sticky;
+  white-space: nowrap;
 }
 
 .menu__list {
@@ -703,6 +710,19 @@
     display: flex;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+  }
+}
+
+.basket {
+  display: none;
+}
+
+@media (max-width: 767.98px) {
+  .basket {
+    display: block;
+    position: fixed;
+    bottom: 12%;
+    right: 7%;
   }
 }
 
