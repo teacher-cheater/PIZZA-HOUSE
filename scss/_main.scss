@@ -8,10 +8,6 @@
   margin-bottom: 1.875em;
 }
 
-.main {
-  padding: 0 0 134px 0;
-}
-
 //общий блок для карточек
 
 .cart-item {
@@ -20,6 +16,7 @@
     display: flex;
     flex-direction: row;
   }
+
   &__block {
     display: flex;
     flex-direction: column;
@@ -27,6 +24,7 @@
     @media (max-width: 767.98px) {
     }
   }
+
   @media (max-width: 539.98px) {
     margin-bottom: 15px;
     border-bottom: 1px solid #f3f3f7;

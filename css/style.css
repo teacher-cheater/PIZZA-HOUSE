@@ -589,7 +589,7 @@
 
 /*--------------------style telephone ------------------------*/
 .telephone {
-  font-family: "Arial";
+  font-family: "Nunito";
   font-weight: 600;
   font-size: 1.13em;
   line-height: 1.38;
@@ -723,7 +723,19 @@
     position: fixed;
     bottom: 12%;
     right: 7%;
+    width: 50px;
+    height: 50px;
+    background: #24bb3d;
+    border-radius: 50%;
   }
+}
+
+.basket__link-icons {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
 }
 
 /*-----------------Стили для заголовков -----------------*/
@@ -734,10 +746,6 @@
   line-height: 1.375;
   color: #000;
   margin-bottom: 1.875em;
-}
-
-.main {
-  padding: 0 0 134px 0;
 }
 
 @media (max-width: 767.98px) {
@@ -772,7 +780,6 @@
   }
 }
 
-/*-------------Адаптивные картинки -------------*/
 /*------------------- Обнуление стилей---------------------------------*/
 /* ОБНУЛЕНИЕ СТИЛЕЙ */
 *,
@@ -823,52 +830,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/*
-.icon-menu {
-	display: none;
-	@media (max-width: $mobile) {
-		display: block;
-		position: relative;
-		width: 30px;
-		height: 18px;
-		cursor: pointer;
-		z-index: 5;
-		span,
-		&::before,
-		&::after {
-			content: "";
-			transition: all 0.3s ease 0s;
-			left: 0px;
-			position: absolute;
-			width: 100%;
-			height: 2px;
-			background-color: #000;
-		}
-		&::before {
-			top: 0px;
-		}
-		&::after {
-			bottom: 0px;
-		}
-		span {
-			top: calc(50% - 1px);
-		}
-		.menu-open & {
-			span {
-				transform: scale(0);
-			}
-			&::before {
-				transform: rotate(-45deg);
-				top: calc(50% - 1px);
-			}
-			&::after {
-				transform: rotate(45deg);
-				bottom: calc(50% - 1px);
-			}
-		}
-	}
-}
-*/
 body {
   line-height: 1;
 }
@@ -891,10 +852,6 @@ body {
           flex-grow: 1;
 }
 
-/* Условные ПК, ноуты и телевизоры */
-/* 1050 из макета (контейнер + отступы) */
-/* Условные планшеты */
-/* Условные мобилки */
 [class*="__container"] {
   max-width: 970px;
   margin: 0px auto;
@@ -903,6 +860,12 @@ body {
 
 .combo {
   margin-bottom: 70px;
+}
+
+@media (max-width: 539.98px) {
+  .combo {
+    margin-bottom: 30px;
+  }
 }
 
 .combo__cart {
@@ -925,6 +888,12 @@ body {
   margin-bottom: 70px;
 }
 
+@media (max-width: 539.98px) {
+  .deserts {
+    margin-bottom: 30px;
+  }
+}
+
 .deserts__cart {
   margin: 0 -20px;
 }
@@ -943,6 +912,18 @@ body {
 
 .drinks {
   margin-bottom: 70px;
+}
+
+@media (max-width: 767.98px) {
+  .drinks {
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 539.98px) {
+  .drinks {
+    margin-bottom: 30px;
+  }
 }
 
 .drinks__cart {
@@ -977,14 +958,18 @@ body {
 
 @media (max-width: 539.98px) {
   .grid-content {
-    border-bottom: 1px solid #f3f3f7;
     gap: 16px 20px;
-    margin-bottom: 15px;
   }
 }
 
 .pizza {
   margin-bottom: 70px;
+}
+
+@media (max-width: 539.98px) {
+  .pizza {
+    margin-bottom: 30px;
+  }
 }
 
 .pizza__cart {
@@ -999,6 +984,12 @@ body {
 
 .snacks {
   margin-bottom: 70px;
+}
+
+@media (max-width: 539.98px) {
+  .snacks {
+    margin-bottom: 30px;
+  }
 }
 
 .snacks__cart {
@@ -1032,7 +1023,7 @@ body {
         -ms-flex-direction: row;
             flex-direction: row;
     max-width: 100%;
-    padding: 0;
+    padding: 0 0 15px 0;
   }
 }
 
@@ -1108,145 +1099,3 @@ body {
     display: none;
   }
 }
-
-/*
-.block {
-	padding: 50px 0;
-	// .block__title
-	&__title {
-		font-size: rem(20);
-		text-transform: uppercase;
-		&:not(:last-child) {
-			margin-bottom: em(20, 20);
-		}
-	}
-	// .block__items
-	&__items {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		grid-auto-rows: 1fr;
-		gap: 20px;
-		@media (max-width: $tablet) {
-			grid-template-columns: repeat(2, 1fr);
-		}
-		@media (max-width: em(560)) {
-			grid-template-columns: repeat(1, 1fr);
-		}
-	}
-}
-.item {
-	background-color: #666;
-	padding: 20px;
-	display: flex;
-	flex-direction: column;
-	gap: 15px;
-
-	//display: grid;
-	//grid-template-rows: auto 1fr;
-	//gap: 15px;
-	
-	// .item__image-ibg
-	&__image-ibg {
-		padding-bottom: percent(250, 300);
-	}
-	// .item__body
-	&__body {
-		flex: 1 1 auto;
-
-		display: grid;
-		justify-items: start;
-		grid-template-rows: auto 1fr;
-		gap: 10px;
-	}
-	// .item__title
-	&__title {
-		text-transform: uppercase;
-	}
-	// .item__name
-	&__name {
-	}
-	// .item__text
-	&__text {
-	}
-	// .item__link
-	&__link {
-	}
-}
-*/
-/*
-.grid {
-	display: grid;
-	grid-template-columns: repeat(12, 1fr);
-	gap: 15px;
-	// .grid__item
-	&__item {
-		padding: 15px;
-		border-radius: rem(15);
-		// .grid__item_v1
-		&_v1 {
-			background-color: #794f45;
-			grid-column: span 4;
-		}
-		// .grid__item_v2
-		&_v2 {
-			background-color: #7a956b;
-			grid-column: span 6;
-			grid-row: span 2;
-		}
-		// .grid__item_v3
-		&_v3 {
-			background-color: #77608d;
-			grid-column: span 6;
-		}
-		// .grid__item_v4
-		&_v4 {
-			background-color: rosybrown;
-			grid-column: span 3;
-		}
-		@media (max-width: $tablet) {
-			&:nth-child(3) {
-				display: none;
-			}
-			&_v1 {
-				grid-column: span 6;
-				order: 1;
-			}
-			&_v2 {
-				order: 2;
-				grid-column: span 8;
-			}
-			&_v3 {
-				order: 4;
-				//grid-column: span 8;
-				grid-column-start: 4;
-				grid-column-end: 13;
-			}
-			&_v4 {
-				order: 3;
-				grid-column: span 4;
-			}
-		}
-		@media (max-width: $mobile) {
-			&_v1 {
-			}
-			&_v2 {
-				grid-column: span 10;
-			}
-			&_v3 {
-				order: 4;
-				//grid-column: span 8;
-				grid-column-start: 3;
-				grid-column-end: 13;
-			}
-			&_v4 {
-				order: 3;
-				grid-column: span 6;
-			}
-		}
-		@media (max-width: $mobileSmall) {
-			grid-column-start: 1;
-			grid-column-end: 13;
-		}
-	}
-}
-*/

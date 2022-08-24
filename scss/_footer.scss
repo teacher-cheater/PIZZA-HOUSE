@@ -111,9 +111,9 @@
     font-family: "Nunito";
     display: flex;
     flex-direction: column;
-    //flex-basis: 33.333%;
     align-items: flex-end;
   }
+
   &__info a {
     color: $mainColorText;
   }
@@ -124,11 +124,10 @@
     column-gap: 10px;
     @media (max-width: 991.98px) {
       margin-bottom: 0px;
-      //flex: 1 1 auto;
     }
   }
-  // .top-footer__number
 
+  // .top-footer__number
   &__number {
     @media (max-width: 991.98px) {
       display: none;
@@ -136,7 +135,6 @@
   }
 
   // .top-footer__text
-
   &__text {
     color: $mainColorText;
     opacity: 0.5;
@@ -147,7 +145,6 @@
   }
 
   // .top-footer__mail
-
   &__mail {
     font-family: "Nunito";
     opacity: 0.9;
@@ -162,17 +159,20 @@
     }
   }
 }
+
 /*-------------------style ---- content-column ----------------*/
 .content-column-1 {
   &:not(:last-child) {
     margin-right: 40px;
   }
 }
+
 .content-column-2 {
   &:not(:last-child) {
     margin-right: 33px;
   }
 }
+
 .content-column-3 {
   &:not(:last-child) {
     margin-right: 26px;
@@ -213,11 +213,13 @@
     margin-bottom: 10px;
     opacity: 1;
   }
+
   &__statistics-2 p,
   &__statistics-1 p {
     opacity: 0.7;
   }
 }
+
 .bottom-footer {
   // .bottom-footer__logo
   @media (max-width: 767.98px) {

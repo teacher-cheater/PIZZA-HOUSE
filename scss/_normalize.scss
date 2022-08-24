@@ -1,31 +1,19 @@
 body {
-	line-height: 1;
+  line-height: 1;
 }
 .wrapper {
-	min-height: 100%;
-	//overflow: hidden;
-	display: flex;
-	flex-direction: column;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 /* ------------------------------ */
 
 .main {
-	flex-grow: 1;
-}
-
-/* Условные ПК, ноуты и телевизоры */
-/* 1050 из макета (контейнер + отступы) */
-@media (max-width: 1050px) {
-}
-/* Условные планшеты */
-@media (max-width: 991.98px) {
-}
-/* Условные мобилки */
-@media (max-width: 767.98px) {
+  flex-grow: 1;
 }
 
 [class*="__container"] {
-	max-width: 970px;
-	margin: 0px auto;
-	padding: 0px 15px;
+  max-width: 970px;
+  margin: 0px auto;
+  padding: 0px 15px;
 }

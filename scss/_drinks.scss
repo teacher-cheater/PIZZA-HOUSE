@@ -1,5 +1,12 @@
 .drinks {
   margin-bottom: 70px;
+
+  @media (max-width: 767.98px) {
+    margin-bottom: 0px;
+  }
+  @media (max-width: 539.98px) {
+    margin-bottom: 30px;
+  }
   &__cart {
     margin: 0 -20px;
   }

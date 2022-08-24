@@ -1,5 +1,8 @@
 .snacks {
   margin-bottom: 70px;
+  @media (max-width: 539.98px) {
+    margin-bottom: 30px;
+  }
   &__cart {
     margin: 0 -20px;
   }

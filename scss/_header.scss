@@ -1,7 +1,6 @@
 .header {
   padding-top: 1.6em;
   margin-bottom: 0.875em;
-  // .header__container
 
   // .header__top
   &__top {
@@ -18,9 +17,8 @@
 
 .top {
   margin-bottom: 2.6em;
-  // .top__block-logo
-  //??----------------------------------------------------------//
 
+  // .top__block-logo
   &__block-logo {
     display: flex;
     gap: 1.4em;
@@ -28,13 +26,13 @@
       gap: 0.515em;
     }
   }
-  //??----------------------------------------------------------//
+
   &__items h1 {
     color: transparent;
     user-select: none;
   }
-  // .top__title
 
+  // .top__title
   &__title {
     justify-content: start;
     background: url("../img/logo/pizza-house.svg") 0 100% / contain no-repeat;
@@ -70,10 +68,10 @@
     color: $subText;
   }
 }
+
 /*--------------------style telephone ------------------------*/
 .telephone {
-  //font-family: 'Nunito';
-  font-family: "Arial";
+  font-family: "Nunito";
   font-weight: 600;
   font-size: 1.13em;
   line-height: 1.38;
@@ -87,12 +85,14 @@
     display: none;
   }
 }
+
 .logo-icons-mobile {
   display: none;
   @media (max-width: 767.98px) {
     display: inline-block;
   }
 }
+
 /*---------------------------------------------*/
 .cart-header__link {
   @media (max-width: 767.98px) {
