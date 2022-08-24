@@ -1,5 +1,4 @@
 .navigation {
-  //display: none;
   padding: 15px;
   position: sticky;
   //?? -------------- no working
@@ -7,9 +6,9 @@
   top: 0;
   left: 0;
   z-index: 5;
-  // .bottom__items
-  //white-space:nowrap;
-  //overflow: hidden;
+  @media (max-width: 539.98px) {
+    padding: 0;
+  }
 
   &__container {
     display: flex;

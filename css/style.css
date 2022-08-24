@@ -554,7 +554,7 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
-  background: url("../img/logo/group.svg") 0 100%/contain no-repeat;
+  background: url("../img/logo/pizza-house.svg") 0 100%/contain no-repeat;
   margin-bottom: 0.4em;
 }
 
@@ -623,6 +623,12 @@
   top: 0;
   left: 0;
   z-index: 5;
+}
+
+@media (max-width: 539.98px) {
+  .navigation {
+    padding: 0;
+  }
 }
 
 .navigation__container {
@@ -737,6 +743,13 @@
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+}
+
+@media (max-width: 539.98px) {
+  .cart-item {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #f3f3f7;
+  }
 }
 
 /*-------------Адаптивные картинки -------------*/
@@ -881,6 +894,13 @@ body {
   max-width: 220px;
 }
 
+@media (max-width: 539.98px) {
+  .cart-item__image-combo {
+    max-width: 115px;
+    padding: 0 7px;
+  }
+}
+
 .deserts {
   margin-bottom: 70px;
 }
@@ -892,6 +912,13 @@ body {
 .cart-item__image-combo {
   padding: 0 15px;
   max-width: 220px;
+}
+
+@media (max-width: 539.98px) {
+  .cart-item__image-combo {
+    max-width: 115px;
+    padding: 0 7px;
+  }
 }
 
 .drinks {
@@ -928,11 +955,33 @@ body {
   }
 }
 
+@media (max-width: 539.98px) {
+  .grid-content {
+    border-bottom: 1px solid #f3f3f7;
+    gap: 16px 20px;
+    margin-bottom: 15px;
+  }
+}
+
 .pizza {
   margin-bottom: 70px;
 }
 
 .pizza__cart {
+  margin: 0 -20px;
+}
+
+@media (max-width: 539.98px) {
+  .pizza__cart {
+    margin: 0;
+  }
+}
+
+.snacks {
+  margin-bottom: 70px;
+}
+
+.snacks__cart {
   margin: 0 -20px;
 }
 
@@ -963,12 +1012,20 @@ body {
         -ms-flex-direction: row;
             flex-direction: row;
     max-width: 100%;
+    padding: 0;
   }
 }
 
 .cart-item__image-pizza {
   padding: 0 15px;
   max-width: 220px;
+}
+
+@media (max-width: 539.98px) {
+  .cart-item__image-pizza {
+    max-width: 115px;
+    padding: 0;
+  }
 }
 
 .cart-item__title {
@@ -980,6 +1037,13 @@ body {
   margin-bottom: 0.625em;
 }
 
+@media (max-width: 767.98px) {
+  .cart-item__title {
+    font-size: 1.125em;
+    line-height: 1.2;
+  }
+}
+
 .cart-item__text {
   font-family: "Nunito";
   font-weight: 400;
@@ -988,6 +1052,13 @@ body {
   color: #73798c;
   height: 100%;
   margin-bottom: 1.875em;
+}
+
+@media (max-width: 767.98px) {
+  .cart-item__text {
+    font-size: 0.75em;
+    line-height: 1.2;
+  }
 }
 
 .cart-item__content {
@@ -1012,12 +1083,10 @@ body {
   color: #000;
 }
 
-.snacks {
-  margin-bottom: 70px;
-}
-
-.snacks__cart {
-  margin: 0 -20px;
+@media (max-width: 539.98px) {
+  .cart-item__content p {
+    display: none;
+  }
 }
 
 /*

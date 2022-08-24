@@ -5,20 +5,25 @@
   gap: 60px 20px;
 }
 
-@media (max-width: 991.98px) {
-  .grid-content {
+.grid-content {
+  @media (max-width: 991.98px) {
     grid-template-columns: repeat(3, 1fr);
     gap: 60px 20px;
     margin: 0 auto;
   }
-}
 
-@media (max-width: 767.98px) {
-  .grid-content {
+  @media (max-width: 767.98px) {
     grid-template-columns: repeat(1, 1fr);
     gap: 30px 20px;
   }
+
+  @media (max-width: 539.98px) {
+    border-bottom: 1px solid #f3f3f7;
+    gap: 16px 20px;
+    margin-bottom: 15px;
+  }
 }
+
 //@media (max-width: 539.98px) {
 //  .grid-content {
 //    grid-template-columns: repeat(1, 1fr);

@@ -1,0 +1,72 @@
+.cart-item {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  @media (max-width: 991.98px) {
+    max-width: 250px;
+  }
+  @media (max-width: 767.98px) {
+    flex-direction: row;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  &__image-pizza {
+    padding: 0 15px;
+    max-width: 220px;
+    @media (max-width: 539.98px) {
+      max-width: 115px;
+      padding: 0;
+    }
+  }
+
+  // .cart-item__title
+  &__title {
+    font-family: "Nunito";
+    font-weight: 600;
+    font-size: 1.25em;
+    line-height: 1.35;
+    color: $mainColor;
+    margin-bottom: 0.625em;
+    @media (max-width: 767.98px) {
+      font-size: 1.125em;
+      line-height: 1.2;
+    }
+  }
+
+  // .cart-item__text
+  &__text {
+    font-family: "Nunito";
+    font-weight: 400;
+    font-size: 0.875em;
+    line-height: 1.36;
+    color: $littleText;
+    height: 100%;
+    margin-bottom: 1.875em;
+    @media (max-width: 767.98px) {
+      font-size: 0.75em;
+      line-height: 1.2;
+    }
+  }
+
+  // .cart-item__content
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__content p {
+    display: inline-block;
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 1.375;
+    color: $mainColor;
+    @media (max-width: 539.98px) {
+      display: none;
+    }
+  }
+}

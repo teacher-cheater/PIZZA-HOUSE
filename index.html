@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Dodo pizza</title>
+    <title>PIZZA HOUSE</title>
   </head>
 
   <body>
@@ -14,23 +14,23 @@
         <div class="header__container">
           <div class="header__top top">
             <div class="top__block-logo">
-              <img class="logo-icons" src="img/logo/logo.svg" alt="logo" />
+              <img class="logo-icons" src="img/logo/logo.png" alt="logo" />
               <img
                 class="logo-icons-mobile"
-                src="img/logo/logo.svg"
+                src="img/logo/logo.png"
                 alt="logo"
                 width="22.5px"
                 height="23px"
               />
               <div class="top__items">
-                <h1 class="top__title">ДОДО ПИЦЦА</h1>
+                <h1 class="top__title">PIZZA HOUSE</h1>
                 <p class="top__text">Сеть пиццерий №1 в России</p>
               </div>
             </div>
             <div class="top__block-info">
               <div class="top__number">
                 <a class="top__phone telephone" href="tel:88003020060"
-                  >8 800 302-00-60</a
+                  >8 800 888-00-66</a
                 >
               </div>
               <p class="top__sub-text">Звонок бесплатный</p>
@@ -55,9 +55,15 @@
             </nav>
           </div>
           <div class="bottom__content">
-            <button type="button" class="bottom__basket main-button" href="#">
-              Корзина
-            </button>
+            <div class="bottom__cart cart-header">
+              <div class="cart-header__icon _icon-cart"><span>0</span></div>
+              <div class="cart-header__body">
+                <div class="cart-header__sum">0 р.</div>
+                <a type="button" class="cart-header__link main-button" href="#">
+                  Корзина
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </nav>
@@ -306,7 +312,7 @@
                 <div class="cart-item__picture _ibg">
                   <img
                     class="cart-item__image-combo"
-                    src="img/combo/alone1.png"
+                    src="img/combo/alone4.png"
                     alt="combo"
                   />
                 </div>
@@ -329,7 +335,7 @@
                 <div class="cart-item__picture _ibg">
                   <img
                     class="cart-item__image-combo"
-                    src="img/combo/alone2.png"
+                    src="img/combo/alone4.png"
                     alt="combo"
                   />
                 </div>
@@ -351,7 +357,7 @@
                 <div class="cart-item__picture _ibg">
                   <img
                     class="cart-item__image-combo"
-                    src="img/combo/alone3.png"
+                    src="img/combo/alone4.png"
                     alt="combo"
                   />
                 </div>
@@ -418,13 +424,14 @@
             </div>
           </div>
         </section>
+        <!-- section snacks -->
         <section class="snacks">
           <div class="snacks__container">
             <h2 class="snacks__title base-title">Закуски</h2>
             <div class="snacks__items grid-content">
               <!-- card -->
               <div class="snacks__cart cart-item">
-                <div class="cart-item__picture _ibg">
+                <div class="cart-item__picture">
                   <img
                     class="cart-item__image-combo"
                     src="img/snacks/sup1.png"
@@ -445,6 +452,7 @@
                   </div>
                 </div>
               </div>
+              <!-- card -->
               <div class="snacks__cart cart-item">
                 <!-- card -->
                 <div class="cart-item__picture _ibg">
@@ -478,7 +486,7 @@
                   />
                 </div>
                 <div class="cart-item__block">
-                  <div class="cart-item__title">Додстер</div>
+                  <div class="cart-item__title">Бостер</div>
                   <div class="cart-item__text">
                     Легендарная горячая закуска с цыпленком, томатами,
                     моцареллой, соусом ранч в тонкой пшеничной лепешке
@@ -501,7 +509,7 @@
                   />
                 </div>
                 <div class="cart-item__block">
-                  <div class="cart-item__title">Острый Додстер</div>
+                  <div class="cart-item__title">Острый Бостер</div>
                   <div class="cart-item__text">
                     Горячая закуска с острым цыпленком, перцем халапеньо,
                     солеными огурчиками, томатами, моцареллой и соусом барбекю в
@@ -525,7 +533,7 @@
                   />
                 </div>
                 <div class="cart-item__block">
-                  <div class="cart-item__title">Додстер Чипотле</div>
+                  <div class="cart-item__title">Бостер Бипотле</div>
                   <div class="cart-item__text">
                     Горячая закуска с пикантным соусом чипотле из копченых
                     перчиков, цыпленком, томатами, моцареллой в тонкой пшеничной
@@ -645,7 +653,7 @@
                 <div class="cart-item__picture _ibg">
                   <img
                     class="cart-item__image-combo"
-                    src="img/deserts/milksheik2.png"
+                    src="img/deserts/milksheik.png"
                     alt="desert"
                   />
                 </div>
@@ -785,14 +793,14 @@
           <div class="footer__top top-footer">
             <div class="top-footer__items">
               <div class="top-footer__content content-column-1">
-                <h4 class="top-footer__title">Додо Пицца</h4>
+                <h4 class="top-footer__title">PIZZA HOUSE</h4>
                 <ul class="top-footer__list-1">
                   <li><a href="#" class="top-footer__link">О нас</a></li>
-                  <li><a href="#" class="top-footer__link">Додо-книга</a></li>
+                  <li><a href="#" class="top-footer__link">PIZZA-книга</a></li>
                   <li>
                     <a href="#" class="top-footer__link">Блог «Сила ума»</a>
                   </li>
-                  <li><a href="#" class="top-footer__link">Додо ИС</a></li>
+                  <li><a href="#" class="top-footer__link">PIZZA ИС</a></li>
                 </ul>
               </div>
               <div class="top-footer__content content-column-2">
@@ -800,7 +808,7 @@
                 <ul class="top-footer__list-2">
                   <li><a href="#" class="top-footer__link">В пиццерии</a></li>
                   <li>
-                    <a href="#" class="top-footer__link">В контакт- центре</a>
+                    <a href="#" class="top-footer__link">В контакт-центре</a>
                   </li>
                 </ul>
               </div>
@@ -850,7 +858,7 @@
                 href="mailto:feedback@dodopizza.com"
                 _balnk
                 class="top-footer__mail"
-                >feedback@dodopizza.com</a
+                >feedback@pizza-house.com</a
               >
             </div>
           </div>
@@ -869,7 +877,7 @@
           </div>
           <nav class="footer__bottom bottom-footer">
             <div class="bottom-footer__logo">
-              <img src="img/logo/logo-gray.svg" alt="logo" />
+              <img src="img/logo/pizza-house-gray.svg" alt="logo" />
             </div>
             <ul class="bottom-footer__list">
               <li>

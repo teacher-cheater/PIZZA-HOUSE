@@ -10,5 +10,9 @@
   &__image-combo {
     padding: 0 15px;
     max-width: 220px;
+    @media (max-width: 539.98px) {
+      max-width: 115px;
+      padding: 0 7px;
+    }
   }
 }
