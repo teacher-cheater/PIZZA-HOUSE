@@ -65,20 +65,20 @@
   font-weight: 600;
   font-size: 1em;
   line-height: 1.37em;
-  background-color: #f96900;
+  background-color: #24bb3d;
   color: #ffffff;
   border-radius: 1000em;
 }
 
 .main-button:hover {
-  background: #c65300;
+  background: #1c902f;
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
 }
 
 .main-button:active {
-  background: #933e00;
+  background: #146521;
 }
 
 @media (max-width: 767.98px) {
@@ -113,24 +113,24 @@
   font-family: "Nunito";
   padding: 0.5em 1.2em;
   border-radius: 1000em;
-  color: #d15700;
+  color: #00d12d;
   cursor: pointer;
   font-weight: 600;
   font-size: 1em;
   line-height: 1.37em;
-  background: #fff0e6;
+  background: #e6ffe9;
   border-radius: 1000em;
 }
 
 .base-button:hover {
-  background: #ffd1b3;
+  background: #b3ffbc;
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
 }
 
 .base-button:active {
-  background: #ffb380;
+  background: #80ff8f;
 }
 
 .footer {
@@ -693,7 +693,7 @@
 }
 
 .menu__list a:hover {
-  color: #f96900;
+  color: #24bb3d;
 }
 
 @media (max-width: 767.98px) {

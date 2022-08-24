@@ -54,18 +54,18 @@
   font-family: "Nunito";
   padding: 0.5em 1.2em;
   border-radius: 1000em;
-  color: #d15700;
+  color: #00d12d;
   cursor: pointer;
   font-weight: 600;
   font-size: 1em;
   line-height: 1.37em;
-  background: #fff0e6;
+  background: #e6ffe9;
   border-radius: 1000em;
   &:hover {
-    background: darken(#fff0e6, 10);
+    background: darken(#e6ffe9, 10);
     transition: 0.2s;
   }
   &:active {
-    background: darken(#fff0e6, 20);
+    background: darken(#e6ffe9, 20);
   }
 }
