@@ -1,10 +1,13 @@
 .top__block-information {
+  max-width: 400px;
 }
 .top__numbers {
   display: flex;
-  position: relative;
+  justify-content: space-between;
+  gap: 7px;
+  //position: relative;
 }
-.top__number {
+.top__num {
   width: 32px;
   height: 32px;
   border: 1px solid #424242;
@@ -12,19 +15,19 @@
   position: relative;
 }
 .top__number-1 {
-  position: absolute;
-  top: 0;
-  left: 20px;
+  //position: absolute;
+  //top: 0;
+  //left: -120px;
 }
 .top__number-2 {
-  position: absolute;
-  top: 0;
-  left: 0;
+  //position: absolute;
+  //top: 0;
+  //left: 0;
 }
 .top__number-3 {
-  position: absolute;
-  top: 0;
-  left: -20px;
+  //position: absolute;
+  //top: 0;
+  //left: 120px;
 }
 
 .top__sub-text {
