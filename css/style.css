@@ -633,7 +633,7 @@
 
 @media (max-width: 539.98px) {
   .navigation {
-    padding: 0;
+    padding: 8px 0;
   }
 }
 
@@ -832,6 +832,8 @@ html {
 
 body {
   line-height: 1;
+  font-family: "Montserrat";
+  font-family: "Roboto";
 }
 
 .wrapper {
@@ -1098,6 +1100,10 @@ body {
   .cart-item__content p {
     display: none;
   }
+}
+
+.popup {
+  display: none;
 }
 
 .top__block-information {
